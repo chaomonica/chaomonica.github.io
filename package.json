@@ -1,0 +1,35 @@
+{
+  "name": "chaomonica.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaomonica/chaomonica.github.io.git"
+  },
+  "author": "Monica Chao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaomonica/chaomonica.github.io/issues"
+  },
+  "homepage": "https://github.com/chaomonica/chaomonica.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack-cli": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-react-jsx": "^7.12.12",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.0.0-beta.5",
+    "webpack": "^5.15.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
