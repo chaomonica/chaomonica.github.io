@@ -10,8 +10,10 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: "DST Farming Guide",
-            template: '/dist/index.html',
+            title: "Personal Portfolio",
+            template: '/dist/template-index.html',
+            filename: 'index.html',
+            inject: 'body'
         }),
     ],
     module: {
@@ -25,6 +27,8 @@ module.exports = {
     },
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: path.join(__dirname, 'public')
+        contentBase: path.join(__dirname, 'public'),
+        watchContentBase: true,
+        historyApiFallback: true,
     },
 }
