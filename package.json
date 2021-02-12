@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chaomonica/chaomonica.github.io.git"
+    "url": "git+https://github.com/chaomonica/portfolio.git"
   },
   "author": "Monica Chao",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chaomonica/chaomonica.github.io/issues"
+    "url": "https://github.com/chaomonica/portfolio/issues"
   },
-  "homepage": "http://chaomonica.github.io/chaomonica.github.io",
+  "homepage": "http://chaomonica.github.io/portfolio",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "express": "^4.17.1",
