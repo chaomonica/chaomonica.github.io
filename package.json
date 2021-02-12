@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/chaomonica/chaomonica.github.io/issues"
   },
-  "homepage": "http://chaomonica.github.io/chaomonica.github.io",
+  "homepage": "http://chaomonica.github.io",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "express": "^4.17.1",
