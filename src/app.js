@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { Link, Route, Switch } from "react-router-dom";
 
 import Main from './components/Main';
@@ -15,7 +15,6 @@ const App = () => {
     <>
       <Switch>
         <Route exact path='/'><Main/></Route>
-
         <Route path='/test'><Test/></Route>
       </Switch>
     </>
@@ -26,5 +25,5 @@ const App = () => {
 
 
 ReactDOM.render(
-<BrowserRouter><App /></BrowserRouter>, document.getElementById('app'))
+<HashRouter><App /></HashRouter>, document.getElementById('app'))
 
