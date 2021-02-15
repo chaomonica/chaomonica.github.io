@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Grid from "@material-ui/core/Grid";
 
+import Header from '../Header/Header.js';
 import Toolbar from '../Navigation/Toolbar.js';
 
 const Contact = () => {
@@ -8,6 +9,7 @@ const Contact = () => {
 
   return (
 <>
+    <Header/>
     <Grid container
       spacing={3}>
           <Grid item xs={3} style={{backgroundColor: 'green'}}>

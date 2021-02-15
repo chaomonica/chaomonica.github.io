@@ -29,9 +29,9 @@ const Header = () => {
           </Typography>
           <Button color="inherit">Login</Button>
 
-          <Link to={'/'}><ProfileIcon color='secondary' fontSize='large'/></Link>
-          <Link to={'/contact'}><ContactIcon color='secondary' fontSize='large'/></Link>
-          <Link to={'/projects'}><OctoCat color='secondary' fontSize='large'/></Link>
+          <Link to={'/'}> <Typography>Home</Typography></Link>
+          <Link to={'/contact'}><Typography>Contact</Typography></Link>
+          <Link to={'/projects'}><Typography>Projects</Typography></Link>
           <Cute color='secondary' fontSize='large'/>
 
         </Toolbar>

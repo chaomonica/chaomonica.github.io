@@ -2,12 +2,15 @@ import React, {useState, useEffect} from 'react';
 import Grid from "@material-ui/core/Grid";
 
 import Toolbar from '../Navigation/Toolbar.js';
+import Header from '../Header/Header.js';
 
-const Project = () => {
+
+const Projects = () => {
 
 
   return (
 <>
+    <Header/>
     <Grid container
       spacing={3}>
           <Grid item xs={3} style={{backgroundColor: 'green'}}>
@@ -21,4 +24,4 @@ const Project = () => {
   )
 }
 
-export default Project;
+export default Projects;
