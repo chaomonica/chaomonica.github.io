@@ -5,13 +5,13 @@ module.exports = {
     mode: 'development',
     entry: './src/app.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'build'),
         filename: 'bundle.js',
     },
     plugins: [
         new HtmlWebpackPlugin({
             title: "Personal Portfolio",
-            template: '/dist/template-index.html',
+            template: '/build/template-index.html',
             filename: 'index.html',
             inject: 'body'
         }),
