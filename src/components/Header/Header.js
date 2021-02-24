@@ -1,42 +1,55 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 
+import { makeStyles } from '@material-ui/core/styles';
+
 import { AppBar } from '@material-ui/core';
+import {Grid} from "@material-ui/core";
+
+
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 
 
-
-import ProfileIcon from '@material-ui/icons/HomeTwoTone';
-import ContactIcon from '@material-ui/icons/AlternateEmailTwoTone';
-import OctoCat from '@material-ui/icons/GitHub';
-import Cute from '@material-ui/icons/EmojiNatureTwoTone';
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+    backgroundColor: "#93ACB0"
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+  },
+}));
 
 const Header = () => {
+  const classes = useStyles();
 
   return (
-    <div style={{backgroundColor: '#5EA65C'}}>
-       <AppBar position="static">
+       <AppBar position="static"  className={classes.root}>
         <Toolbar>
-          <IconButton edge="start"  color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" >
-            News
-          </Typography>
-          <Button color="inherit">Login</Button>
+          <Grid container>
+            <Grid item xs={9}>
+            </Grid>
 
-          <Link to={'/'}> <Typography>Home</Typography></Link>
-          <Link to={'/contact'}><Typography>Contact</Typography></Link>
-          <Link to={'/projects'}><Typography>Projects</Typography></Link>
-          <Cute color='secondary' fontSize='large'/>
+            <Grid item xs={3} style={{
+              display:'flex',
+              flexDirection: "row",
+              justifyContent: "flex-end",
+              alignItems:"flex-end"}}>
+              <Link to={'/'}> <Typography style={{marginLeft:10}}>HOME</Typography></Link>
 
+              <Link to={'/projects'}><Typography style={{marginLeft:10}}>PROJECTS</Typography></Link>
+
+              <Link to={'/contact'}><Typography style={{marginLeft:10}}>CONTACT</Typography></Link>
+
+            </Grid>
+
+        </Grid>
         </Toolbar>
       </AppBar>
-    </div>
   )
 }
 
